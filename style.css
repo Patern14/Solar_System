@@ -1,3 +1,38 @@
+/* ======================================================================
+  SUMMARY
+
+  General styling
+
+  Sun
+
+  Planets
+
+  Moons
+
+  Mercury
+  Venus
+  Earth
+    Moon
+  Mars
+    Deimos
+    Phobos
+  Jupiter
+    Io
+    Europa
+    Ganymede
+    Callisto
+  Saturn
+    Titan
+  Uranus
+  Neptune 
+
+  Animations
+
+*/
+
+/* ====================================================================
+  General Styling
+===================================================================== */
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -5,31 +40,33 @@
   padding: 0;
 }
 
-#system {
+#solar_system {
   outline: 1px solid green;
   outline-offset: -1;
   background: rgb(0, 0, 0);
+  background-image: url(images/space_4.jpg);
   position: relative;
   width: 100vw;
   height: 100vh;
 }
 
-img {
-  width: 30px;
-}
-
-/* Sun ======================================================== */
+/* ======================================================================
+  Sun 
+====================================================================== */
 #sun {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.sun_image {
-  width: 100px;
+#sun_image {
+  width: 10vw;
+  animation: sun_rotation 1000ms 1s linear infinite;
 }
 
-/* Planets ==================================================== */
+/* =====================================================================
+  Planets 
+====================================================================== */
 .planet {
   position: absolute;
   top: 50%;
@@ -46,82 +83,176 @@ img {
   transform: translate(-50%, -50%);
 }
 
-/* Moons ============================================================== */
+/* ====================================================================
+  Moons 
+===================================================================== */
 .moon {
   position: absolute;
-  /* top: 50%;*/
   left: 50%; 
-  padding: 2.5vw;
-  /* border: 1px solid magenta; */
-  border-radius: 50%;
   transform: translate(-50%, -50%);
-  animation: year_rotation 1000ms 1s linear infinite;
 }
 .moon_container {
   position: absolute;
-  /* top: 50%;
-  left: 50%; */
   padding: 2vw;
-  border: 1px solid #b7bdc4;
+  /* border: 1px solid #b7bdc4; */    /* Moons orbit */
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  /* animation: year_rotation 10000ms 1s linear infinite; */
 }
 .moon_image {
   position: absolute;
   top: -0vw;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 0.5vw;
 }
-/* =========================================================================== */
 
-#mercury {
+/* Mercury =========================================================================== */
+#mercury_orbit {
   width: 10vw;
   height: 10vw;
   border: 1px solid #b7bdc4;
   animation: year_rotation 1000ms 1s linear infinite;
 }
-#venus {
+#mercury_image {
+  width: 1vw;
+  animation: planet_rotation 2000ms 1s linear infinite;
+}
+
+/* Venus =========================================================================== */
+#venus_orbit {
   width: 15vw;
   height: 15vw;
   border: 1px solid #ffc85f;
   animation: year_rotation 2000ms 1s linear infinite;
 }
-#earth {
+#venus_image {
+  width: 2vw;
+  animation: planet_rotation 2000ms 1s linear infinite;
+}
+
+/* Earth =========================================================================== */
+#earth_orbit {
   width: 20vw;
   height: 20vw;
   border: 1px solid #03aa6f;
   animation: year_rotation 3000ms 1s linear infinite;
 }
-#mars {
+#earth_image {
+  width: 2vw;
+  animation: planet_rotation 2000ms 1s linear infinite;
+}
+
+#moon_container {
+  padding: 2vw;
+  animation: year_rotation 2000ms 1s linear infinite;
+}
+
+/* Mars =========================================================================== */
+#mars_orbit {
   width: 25vw;
   height: 25vw;
   border: 1px solid #f04729;
   animation: year_rotation 4000ms 1s linear infinite;
 }
-#jupiter {
-  width: 30vw;
-  height: 30vw;
+#mars_image {
+  width: 1.3vw;
+  animation: planet_rotation 2000ms 1s linear infinite;
+}
+
+#deimos_container {
+  padding: 1vw;
+  animation: year_rotation 2000ms 1s linear infinite;
+}
+
+#phobos_container {
+  padding: 1.5vw;
+  animation: year_rotation 5000ms 1s linear infinite;
+}
+
+/* Jupiter =========================================================================== */
+#jupiter_orbit {
+  width: 35vw;
+  height: 35vw;
   border: 1px solid #e5936a;
   animation: year_rotation 5000ms 1s linear infinite;
 }
-#saturn {
-  width: 35vw;
-  height: 35vw;
+#jupiter_image {
+  width: 4vw;
+  animation: planet_rotation 2000ms 1s linear infinite;
+}
+#io_container {
+  padding: 2.3vw;
+  animation: year_rotation 3000ms 1s linear infinite;
+}
+#europa_container {
+  padding: 2.6vw;
+  animation: year_rotation 4000ms 1s linear infinite;
+}
+#ganymede_container {
+  padding: 2.8vw;
+  animation: year_rotation 5000ms 1s linear infinite;
+}
+#callisto_container {
+  padding: 3vw;
+  animation: year_rotation 6000ms 1s linear infinite;
+}
+
+/* Saturn =========================================================================== */
+#saturn_orbit {
+  width: 45vw;
+  height: 45vw;
   border: 1px solid #d18030;
   animation: year_rotation 6000ms 1s linear infinite;
 }
-#uranus {
-  width: 40vw;
-  height: 40vw;
+#saturn_image {
+  width: 4vw;
+  animation: planet_rotation 2000ms 1s linear infinite;
+}
+
+#titan_container {
+  padding: 3vw;
+  animation: year_rotation 3000ms 1s linear infinite;
+}
+
+/* Uranus =========================================================================== */
+#uranus_orbit {
+  width: 55vw;
+  height: 55vw;
   border: 1px solid #69ccd7;
   animation: year_rotation 7000ms 1s linear infinite;
 }
-#neptune {
-  width: 45vw;
-  height: 45vw;
+#uranus_image {
+  width: 2.6vw;
+  animation: planet_rotation 2000ms 1s linear infinite;
+}
+
+/* Neptune =========================================================================== */
+#neptune_orbit {
+  width: 65vw;
+  height: 65vw;
   border: 1px solid #2683c9;
   animation: year_rotation 8000ms 1s linear infinite;
+}
+#neptune_image {
+  width: 2.6vw;
+  animation: planet_rotation 2000ms 1s linear infinite;
+}
+
+/* ===============================================================================
+  Animations 
+================================================================================ */
+@keyframes sun_rotation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(359deg);
+    opacity: 1;
+  }
 }
 
 @keyframes year_rotation {
@@ -133,6 +264,14 @@ img {
   }
 }
 
+@keyframes planet_rotation {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(359deg);
+  }
+}
 
 
 
