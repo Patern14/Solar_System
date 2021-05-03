@@ -1,5 +1,5 @@
 # Solar_System
-A simple model of our solar system made with CSS;
+A simple model of our solar system made with CSS and Javascript;
 
 https://patern14.github.io/Solar_System/
 
