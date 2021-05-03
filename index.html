@@ -15,7 +15,21 @@
     <!-- <header>
         <h1>Solar system</h1>
     </header> -->
-    <button onclick=testFunction()> Click me </button>
+    <!-- <button onclick=testFunction()> Click me </button> -->
+
+    <div class="select_container">
+        <label for="select_ratio"><h4>Solar system speed</h4></label>
+        <select name="select_ratio" id="select_ratio" onchange="testFunction(this.value)">
+            <option value="">Select speed</option>
+            <option value="1">1s = 1 day</option>
+            <option value="7">1s = 1 week</option>
+            <option value="30.417">1s = 1 month</option>
+            <option value="91.251">1s = 3 months</option>
+            <option value="182.502">1s = 6 months</option>
+            <option value="365">1s = 1 year</option>
+            <option value="3650">1s = 10 years</option>
+        </select>
+    </div>
     
     <div id="solar_system">
         <div class="sun" id="sun">

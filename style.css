@@ -28,6 +28,8 @@
 
   Animations
 
+  Select menu
+
 */
 
 /* ====================================================================
@@ -41,8 +43,6 @@
 }
 
 #solar_system {
-  /* outline: 1px solid green;
-  outline-offset: -1; */
   background: rgb(0, 0, 0);
   background-image: url(images/space_4.jpg);
   position: relative;
@@ -74,7 +74,6 @@
   border: 1px solid grey;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  /* animation: year_rotation 10000ms 1s linear infinite; */
 }
 .planet_image {
   position: absolute;
@@ -111,11 +110,9 @@
   width: 10vw;
   height: 10vw;
   border: 1px solid #b7bdc4;
-  /* animation: year_rotation 5870ms 1s linear infinite; */
 }
 #mercury_image {
   width: 1vw;
-  /* animation: planet_rotation 17600ms 1s linear infinite; */
 }
 
 /* Venus =========================================================================== */
@@ -123,11 +120,9 @@
   width: 15vw;
   height: 15vw;
   border: 1px solid #ffc85f;
-  /* animation: year_rotation 22470ms 1s linear infinite; */
 }
 #venus_image {
   width: 2vw;
-  /* animation: planet_rotation 24300ms 1s linear infinite; */
 }
 
 /* Earth =========================================================================== */
@@ -135,17 +130,13 @@
   width: 20vw;
   height: 20vw;
   border: 1px solid #03aa6f;
-  /* animation: year_rotation 36500ms 1s linear infinite; */
-  /* animation: 36500ms linear 1s infinite normal none running year_rotation */
 }
 #earth_image {
   width: 2vw;
-  /* animation: planet_rotation 100ms 1s linear infinite; */
 }
 
 #moon_container {
   padding: 2vw;
-  /* animation: year_rotation 2900ms 1s linear infinite; */
 }
 
 /* Mars =========================================================================== */
@@ -153,21 +144,17 @@
   width: 25vw;
   height: 25vw;
   border: 1px solid #f04729;
-  /* animation: year_rotation 68700ms 1s linear infinite; */
 }
 #mars_image {
   width: 1.3vw;
-  /* animation: planet_rotation 100ms 1s linear infinite; */
 }
 
 #deimos_container {
   padding: 1.5vw;
-  /* animation: year_rotation 130ms 1s linear infinite; */
 }
 
 #phobos_container {
   padding: 1vw;
-  /* animation: year_rotation 30ms 1s linear infinite; */
 }
 
 /* Jupiter =========================================================================== */
@@ -175,28 +162,22 @@
   width: 35vw;
   height: 35vw;
   border: 1px solid #e5936a;
-  /* animation: year_rotation 438000ms 1s linear infinite; */
 }
 #jupiter_image {
   width: 4vw;
-  /* animation: planet_rotation 45ms 1s linear infinite; */
 }
 
 #io_container {
-  padding: 2.3vw;
-  /* animation: year_rotation 170ms 1s linear infinite; */
+  padding: 2.5vw;
 }
 #europa_container {
-  padding: 2.6vw;
-  /* animation: year_rotation 350ms 1s linear infinite; */
+  padding: 2.8vw;
 }
 #ganymede_container {
-  padding: 2.8vw;
-  /* animation: year_rotation 720ms 1s linear infinite; */
+  padding: 3.1vw;
 }
 #callisto_container {
-  padding: 3vw;
-  /* animation: year_rotation 1700ms 1s linear infinite; */
+  padding: 3.4vw;
 }
 
 /* Saturn =========================================================================== */
@@ -204,16 +185,13 @@
   width: 45vw;
   height: 45vw;
   border: 1px solid #d18030;
-  /* animation: year_rotation 1090000ms 1s linear infinite; */
 }
 #saturn_image {
   width: 4vw;
-  /* animation: planet_rotation 48ms 1s linear infinite; */
 }
 
 #titan_container {
   padding: 3vw;
-  /* animation: year_rotation 1600ms 1s linear infinite; */
 }
 
 /* Uranus =========================================================================== */
@@ -221,11 +199,9 @@
   width: 55vw;
   height: 55vw;
   border: 1px solid #69ccd7;
-  /* animation: year_rotation 3066000ms 1s linear infinite; */
 }
 #uranus_image {
   width: 2.6vw;
-  /* animation: planet_rotation 80ms 1s linear infinite; */
 }
 
 /* Neptune =========================================================================== */
@@ -233,16 +209,13 @@
   width: 65vw;
   height: 65vw;
   border: 1px solid #2683c9;
-  /* animation: year_rotation 6022500ms 1s linear infinite; */
 }
 #neptune_image {
   width: 2.6vw;
-  /* animation: planet_rotation 80ms 1s linear infinite; */
 }
 
 #triton_container {
   padding: 2.5vw;
-  /* animation: year_rotation 1600ms 1s linear infinite; */
 }
 
 /* ===============================================================================
@@ -285,6 +258,29 @@
     transform: translate(-50%, -50%) rotate(359deg);
   }
 }
+
+/* ===============================================================================
+  Select menu
+================================================================================ */
+.select_container {
+  border: 1px solid white;
+  border-radius: 8px;
+  z-index: 5;
+  width: 12rem;
+  padding: 0.5rem;
+  line-height: 2rem;
+  position: absolute;
+  top: 5vw;
+  left: 2vw;
+  background: rgb(195, 195, 195);
+  
+}
+
+#select_ratio {
+  padding: 0.3rem;
+}
+
+
 
 
 
